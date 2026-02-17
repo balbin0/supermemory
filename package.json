@@ -1,0 +1,30 @@
+{
+  "name": "supermemory",
+  "version": "0.1.0",
+  "description": "Zero-AI external memory system for LLM agents. 490x memory amplification, <5ms retrieval, single SQLite file.",
+  "type": "module",
+  "bin": {
+    "supermemory": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts serve",
+    "init": "bun run src/index.ts init",
+    "build": "bun build --compile src/index.ts --outfile supermemory"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "llm",
+    "claude",
+    "mcp",
+    "sqlite",
+    "bm25",
+    "self-hosted"
+  ]
+}
